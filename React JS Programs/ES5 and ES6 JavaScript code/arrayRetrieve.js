@@ -27,6 +27,8 @@ num1.forEach((n,i)=>document.write("<br/> Value is "+n+"index "+i));
 
 // chain of function 
 // 10,20,30,40,50,60
+let num2 = num1.map(v=>v+2);
+document.write(num2);
 num1.map(v=>v+2).forEach(v=>document.write("<br/> Map value "+v));
 // [10,11,14,20,30,33,40,50,65,60]
 
