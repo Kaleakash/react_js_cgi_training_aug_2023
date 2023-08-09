@@ -1,8 +1,9 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import Customer from './Customer';
-import Product from './Product';
+//import Customer from './Customer';
+//import Product from './Product';
 import Employee from './Employee';
+import ProductsInfo from './ProductInfo';
 
 function App() {
   // JavaScript comments 
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
       {/* <Customer></Customer>
       <Product></Product> */}
-      <Employee></Employee>
+      {/* <Employee></Employee> */}
+      <ProductsInfo></ProductsInfo>
     </div>
   );
 }
