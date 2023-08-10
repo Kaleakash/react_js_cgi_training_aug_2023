@@ -92,30 +92,30 @@ let productRow = products.map((p,index)=>
     </tr>
 )
     return(
-        <div>
-            <h2>Product CRUD Operation</h2>
-            <form onSubmit={storeProduct}>
+        <div className="container">
+            <h2 style={{"color":"red",'fontSize':"24pt"}}>Product CRUD Operation</h2>
+            <form onSubmit={storeProduct} className="form-group">
                 <label>Pid</label>
                 <input type="number" value={pid} name="pid"
                 onChange={(event)=>setPid(event.target.value)}
-                /><br/>
+                className="form-control"/><br/>
                 <label>PName</label>
                 <input type="text" value={pname} name="pname"
                 onChange={(event)=>setPName(event.target.value)}
-                /><br/>
+                className="form-control"/><br/>
                 <label>Price</label>
                 <input type="number" value={price} name="price"
                 onChange={(event)=>setPrice(event.target.value)}
-                /><br/>
+                className="form-control"/><br/>
                 <label>URL</label>
                 <input type="text" value={url} name="url"
                 onChange={(event)=>setUrl(event.target.value)}
-                /><br/>
-                <input type="submit" value={b1}/>
-                <input type="reset" value="reset"/>
+                className="form-control"/><br/>
+                <input type="submit" value={b1} className="btn btn-success"/>
+                <input type="reset" value="reset" className="btn btn-info"/>
             </form>
             <hr/>
-            <table>
+            <table className="table">
                 <thead>
                     <th>PId</th>
                     <th>PName</th>
