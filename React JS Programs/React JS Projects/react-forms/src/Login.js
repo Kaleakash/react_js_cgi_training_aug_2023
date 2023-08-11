@@ -34,11 +34,13 @@ let resetInfo = (event)=> {
 }
     return(
         <div>
-            <span>{msg}</span>
+            <span style={{"color":"red"}}>{msg}</span>
             <h2>Login Page</h2>
             <form onSubmit={handleSubmit}>
                 <label>Emailid</label>
-                    <input type="email" value={emailid} name="emailid" onChange={changeValue}/><br/>
+                    <input type="email" value={emailid} name="emailid" onChange={changeValue}/>
+                    
+                    <br/>
                 <label>Password</label>
                     <input type="password" value={password} name="password" onChange={changeValue}/><br/>
                 <input type="submit" value="submit"/>
